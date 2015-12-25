@@ -1,0 +1,150 @@
+
+body {
+	background: #337ab7;
+	font-family: "Lato Light";
+	color: white;
+}
+
+
+input, 
+textarea {
+	border: 0px solid transparent;
+	outline: none;
+	border-bottom: 1px solid white;
+	font-size: 21px;
+	color: white;
+	background: transparent;
+	padding: 6px 12px;
+}
+
+textarea {
+	border: 1px solid white;
+}
+
+.main-task {
+	min-width: 366px;
+}
+
+.new-comment {
+}
+
+.new-comment textarea {
+	margin-bottom: 15px;
+	max-width: 100%;
+	min-width: 100%;
+}
+
+.main-task .task-info {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 30px;
+}
+
+.main-task .task-name {
+	margin-bottom: 15px;
+}
+
+.main-task .task-name input {
+	width: 100%;
+}
+
+.main-task .btns {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.main-task .btns .task-btn {
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	margin-bottom: 5px;
+	border: 2px solid white;
+	cursor: pointer;
+	transition: all .3s;
+	position: relative;
+	background: transparent;
+}
+
+.main-task .btns .task-btn:hover {
+	background: rgba(255, 255, 255, .15);
+}
+
+.main-task .btns .task-btn.stop:before {
+	content: "";
+	position: absolute;
+	display: block;
+	background: #d9534f;
+	top: 50%;
+	left: 50%;
+	width: 20px;
+	height: 20px;
+	margin-top: -10px;
+	margin-left: -10px;
+}
+
+.main-task .btns .task-btn.pause:before {
+	content: "";
+	position: absolute;
+	display: block;
+	background: white;
+	top: 50%;
+	left: 50%;
+	width: 5px;
+	height: 20px;
+	margin-top: -10px;
+	margin-left: -10px;
+}
+
+.main-task .btns .task-btn.pause:after {
+	content: "";
+	position: absolute;
+	display: block;
+	background: white;
+	top: 50%;
+	left: 50%;
+	width: 5px;
+	height: 20px;
+	margin-top: -10px;
+	margin-left: 5px;
+}
+
+.main-task .btns .task-btn.play:before {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 50%;
+	left: 50%;
+	margin-top: -10px;
+	margin-left: -7px;
+	
+	border-top: 10px solid transparent;
+	border-left: 17px solid #5cb85c;
+	border-bottom: 10px solid transparent;
+}
+
+.main-task .btns .task-btn.create:before {
+	content: "\f067";
+	font-family: FontAwesome;
+	position: absolute;
+	display: block;
+	top: 50%;
+	left: 50%;
+	margin-top: -15px;
+	margin-left: -10px;
+	font-size: 23px;
+}
+
+.task-item {
+	cursor: pointer;
+}
+
+.task-item.current,
+.task-item:hover {
+	text-decoration: underline;
+}
+
+
+
+
+

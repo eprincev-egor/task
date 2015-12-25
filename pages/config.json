@@ -1,0 +1,19 @@
+{
+	"admin_mail": "eprincev.egor@yandex.ru",
+	"title": "My Project",
+	"routes": {
+		"/main/": {
+			"template": "main",
+			"title": "Главная",
+			"content": {
+				"name": "Главная"
+			}
+		}
+	},
+
+	"menu": {
+	},
+
+	"gallery": {
+	}
+}
